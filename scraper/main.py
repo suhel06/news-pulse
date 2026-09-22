@@ -1,10 +1,9 @@
-from db.mongo import articles_collection
+from feeds.rss_reader import fetch_articles
+from db.article_repository import save_articles
 
-test_article = {
-    "title": "Test Article",
-    "source": "System"
-}
+articles = fetch_articles()
 
-result = articles_collection.insert_one(test_article)
+inserted, skipped = save_articles(articles)
 
-print("Inserted:", result.inserted_id)
+print(f"\nInserted: {inserted}")
+print(f"Skipped: {skipped}")
