@@ -1,19 +1,25 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 # Node
 node_modules/
-
-# Next.js
 .next/
+npm-debug.log*
 
 # Python
-venv/
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
-# Environment files
-.env
+# Python virtual environment
+venv/
+.venv/
 
-# VS Code
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
 .vscode/
-
-# Logs
-*.log
