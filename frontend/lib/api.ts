@@ -1,7 +1,7 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL!;
 
 export async function getArticles() {
-  const response = await fetch(`${API_URL}/articles`);
+  const response = await fetch(`${API_URL}/api/articles`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch articles");
