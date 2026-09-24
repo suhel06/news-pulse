@@ -207,7 +207,13 @@ Next.js Frontend
 Timeline Visualization
 ```
 
----
+## News Sources
+
+- BBC RSS
+- NPR RSS
+- The Guardian RSS
+
+----
 
 ## Challenges Faced
 
